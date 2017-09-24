@@ -99,6 +99,7 @@
       $message.text('recieved message');
 
       var json = JSON.parse(ev.data);
+      console.log("event data",ev.data)
       $('#' + json.id).hide();
       $('#' + json.id).fadeIn("slow");
       $('#' + json.id).text(json.value);
